@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color-texto: #07020D;
+    --color-texto-alpha: #07020d58;
+    --color-blanco: #FFFFFF;
+    --color-fondo: #F1E9DB;
+    --color-acento: #5DB7DE;
+    --color-marron-100: #767065;
+    --color-marron-200: #716A5C;
+}
+
+/* Estilos generales */
+* {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--color-fondo);
+    margin: 0;
+    background-color: var(--color-texto);
+    overflow: hidden;
+}
+
+/* Sólo para los lectores de pantalla */
+.sr-only {
+    position: absolute;
+    top: 0;
+    left: -4000;
+    display: block;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+button[data-visible="false"] {
+    display: none;
+}
+
+button[data-visible="true"] {
+    display: block;
+}
